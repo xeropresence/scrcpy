@@ -407,7 +407,7 @@ input_manager_process_key(struct input_manager *im,
         return;
     }
 
-    if (!control) {
+    if (!control || event->repeat) {
         return;
     }
 
